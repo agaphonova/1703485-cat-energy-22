@@ -93,14 +93,12 @@
             <img src="img/cat-after.png" width="251" height="240" alt="стройный кот после приема Cat Energy Slim">
           </div>
           <div class="example__wrapper slider">
-            <div class="slider__list">
-              <button class="slider__item slider__item--before" type="button">было</button>
-              <button class="slider__item slider__item--after" type="button">стало</button>
-            </div>
-            <p class="example__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button" aria-label="до"></button>
-              <button class="slider__toggle" type="button"aria-label="после"></button>
-            </p>
+            <input class="example__input" type="checkbox" checked="checked" id="toggle">
+            <label class="switch" for="toggle">
+              <span class="switch__label">Было</span>
+              <span class="switch__toggle"></span>
+              <span class="switch__label">Стало</span>
+            </label>
           </div>
         </div>
       </section>
