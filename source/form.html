@@ -6,21 +6,21 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="#nowhere">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logo.svg" width="191" height="38" alt="«Кэт энерджи»">
       </a>
       <button class="menu__toggle" aria label="открыть/закрыть меню" type="button"></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <p class="site-list__link">Главная</p>
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#nowhere">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#nowhere">Подбор программы</a>
+              <p class="site-list__link" href="#nowhere">Подбор программы</p>
             </li>
           </ul>
         </div>
@@ -33,31 +33,40 @@
         <form class="selection__form" action="" method="post">
             <div class="selection__wrapper">
                 <div class="data__input">
-                    <label for="client-name">ИМЯ:*</label>
+                    <label for="client-name">Имя:*</label>
                     <input class="input-info" id="client-name" type="text" name="name" placeholder="БАРСИК">
                 </div>
                 <div class="data__input">
                     <label for="client-name">Вес (кг):*</label>
-                    <input class="input-info" id="client-name" type="text" name="name" placeholder="7">
+                    <input class="input-info" id="client-name" type="number" name="name" placeholder="7">
                 </div>
                 <div class="data__input">
                     <label for="client-name">Возраст (лет):</label>
-                    <input class="input-info" id="client-name" type="text" name="name" placeholder="7">
+                    <input class="input-info" id="client-name" type="number" name="name" placeholder="7">
                 </div>
             </div>
             <div class="option">
                 <div class="selection__wrapper">
                     <div class="selection__parameter">
-                        <input class="input-parameter" type="radio" name="programm" value="slim" id="program-slim" checked>
-                        <label class="programm__name" for="program-slim">Похудение</label>
+                      <label class="parameter">
+                        <input class="parameter__input" type="radio" name="programm" value="slim" checked>
+                        <span class="parameter__element"></span>
+                        <span class="parameter__label">Похудение</span>
+                      </label>
                     </div>
                     <div class="selection__parameter">
-                        <input class="input-parameter" type="radio" name="programm" value="mass" id="program-mass">
-                        <label class="programm__name" for="program-mass">Набор массы</label>
+                      <label class="parameter">
+                        <input class="parameter__input" type="radio" name="programm" value="mass">
+                        <span class="parameter__element"></span>
+                        <span class="parameter__label">Набор массы</span>
+                      </label>
                     </div>
                     <div class="selection__parameter">
-                        <input class="input-parameter" type="radio" name="programm" value="unknown" id="advice">
-                        <label class="programm__name" for="advice">Не знаю (Нужен ваш совет)</label>
+                      <label class="parameter">
+                        <input class="parameter__input" type="radio" name="programm" value="unknown">
+                        <span class="parameter__element"></span>
+                        <span class="parameter__label">Не знаю (Нужен ваш совет)</span>
+                      </label>
                     </div>
                 </div>
             </div>
@@ -84,24 +93,34 @@
             <div class="extra">
                 <div class="extra__wrapper">
                     <h2>Дополнительно</h2>
-                    <ul class="exstra-parameter__list parameter-list">
-                        <li class="parameter-list__item">
-                            <input class="parameter-list__checkbox" type="checkbox" name="sugar" id="sugar" checked>
-                            <label class="parameter-list__name" for="sugar">сахарозаменитель</label>
-                        </li>
-                        <li class="parameter-list__item">
-                            <input class="parameter-list__checkbox" type="checkbox" name="water" id="water">
-                            <label class="parameter-list__name" for="water">питьевая вода</label>
-                        </li>
-                        <li class="parameter-list__item">
-                            <input class="parameter-list__checkbox" type="checkbox" name="milk" id="milk">
-                            <label class="parameter-list__name" for="milk">молоко</label>
-                        </li>
-                        <li class="parameter-list__item">
-                            <input class="parameter-list__checkbox" type="checkbox" name="vitamin" id="vitamin">
-                            <label class="parameter-list__name" for="vitamin">витамины</label>
-                        </li>
-                    </ul>
+                    <div class="selection__parameter">
+                      <label class="parameter">
+                        <input class="parameter__input" type="checkbox" name="programm">
+                        <span class="parameter__element"></span>
+                        <span class="parameter__label">сахарозаменитель</span>
+                      </label>
+                    </div>
+                    <div class="selection__parameter">
+                      <label class="parameter">
+                        <input class="parameter__input" type="checkbox" name="programm">
+                        <span class="parameter__element"></span>
+                        <span class="parameter__label">питьевая вода</span>
+                      </label>
+                    </div>
+                    <div class="selection__parameter">
+                      <label class="parameter">
+                        <input class="parameter__input" type="checkbox" name="programm">
+                        <span class="parameter__element"></span>
+                        <span class="parameter__label">молоко</span>
+                      </label>
+                    </div>
+                    <div class="selection__parameter">
+                      <label class="parameter">
+                        <input class="parameter__input" type="checkbox" name="programm">
+                        <span class="parameter__element"></span>
+                        <span class="parameter__label">витамины</span>
+                      </label>
+                    </div>
                     <div class="send">
                         <button type="submit" class="send__button">Отправить заявку</button>
                         <span class="send__attantion">* — Обязательные поля</span>
