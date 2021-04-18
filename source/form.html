@@ -9,10 +9,9 @@
       <a class="page-header__logo" href="index.html">
         <img src="img/logo.svg" width="191" height="38" alt="«Кэт энерджи»">
       </a>
-      <button class="menu__toggle" aria label="открыть/закрыть меню" type="button"></button>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+      <button class="page-header__toggle" aria-label="открыть/закрыть меню" type="button"></button>
+      <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list site-list site-list--black">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -20,132 +19,158 @@
               <a class="site-list__link" href="#nowhere">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <p class="site-list__link" href="#nowhere">Подбор программы</p>
+              <p class="site-list__link">Подбор программы</p>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
     <main class="selection">
         <h1 class="selection__title">Подбор программы</h1>
         <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="selection__form" action="" method="post">
-            <div class="selection__wrapper">
-                <div class="data__input">
-                    <label for="client-name">Имя:*</label>
-                    <input class="input-info" id="client-name" type="text" name="name" placeholder="БАРСИК">
-                </div>
-                <div class="data__input">
-                    <label for="client-name">Вес (кг):*</label>
-                    <input class="input-info" id="client-name" type="number" name="name" placeholder="7">
-                </div>
-                <div class="data__input">
-                    <label for="client-name">Возраст (лет):</label>
-                    <input class="input-info" id="client-name" type="number" name="name" placeholder="7">
-                </div>
-            </div>
-            <div class="option">
-                <div class="selection__wrapper">
-                    <div class="selection__parameter">
-                      <label class="parameter">
-                        <input class="parameter__input" type="radio" name="programm" value="slim" checked>
-                        <span class="parameter__element"></span>
-                        <span class="parameter__label">Похудение</span>
-                      </label>
-                    </div>
-                    <div class="selection__parameter">
-                      <label class="parameter">
-                        <input class="parameter__input" type="radio" name="programm" value="mass">
-                        <span class="parameter__element"></span>
-                        <span class="parameter__label">Набор массы</span>
-                      </label>
-                    </div>
-                    <div class="selection__parameter">
-                      <label class="parameter">
-                        <input class="parameter__input" type="radio" name="programm" value="unknown">
-                        <span class="parameter__element"></span>
-                        <span class="parameter__label">Не знаю (Нужен ваш совет)</span>
-                      </label>
-                    </div>
-                </div>
-            </div>
-            <div class="contact">
-                <div class="selection__wrapper">
-                    <h2>Контактные данные(владельца кота)</h2>
-                    <div class="data__input">
-                        <label for="client-name">E-mail:*</label>
-                        <input class="input-info input-info--contact" id="client-name" type="text" name="name" placeholder="kuklachev@gmail.com">
-                    </div>
-                    <div class="data__input">
-                        <label for="client-tel">Телефон:*</label>
-                        <input class="input-info input-info--contact" id="client-tel" type="tel" name="mail" placeholder="8 (960) 900-60-90">
-                    </div>
-                </div>
-            </div>
-            <div class="comment">
-                <div class="selection__wrapper">
-                    <h2>Комментарий</h2>
-                    <label for="comment" class="comment__name">Текст письма:</label>
-                    <textarea class="comment__content" id="comment" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
-                </div>
-            </div>
-            <div class="extra">
-                <div class="extra__wrapper">
-                    <h2>Дополнительно</h2>
-                    <div class="selection__parameter">
-                      <label class="parameter">
-                        <input class="parameter__input" type="checkbox" name="programm">
-                        <span class="parameter__element"></span>
-                        <span class="parameter__label">сахарозаменитель</span>
-                      </label>
-                    </div>
-                    <div class="selection__parameter">
-                      <label class="parameter">
-                        <input class="parameter__input" type="checkbox" name="programm">
-                        <span class="parameter__element"></span>
-                        <span class="parameter__label">питьевая вода</span>
-                      </label>
-                    </div>
-                    <div class="selection__parameter">
-                      <label class="parameter">
-                        <input class="parameter__input" type="checkbox" name="programm">
-                        <span class="parameter__element"></span>
-                        <span class="parameter__label">молоко</span>
-                      </label>
-                    </div>
-                    <div class="selection__parameter">
-                      <label class="parameter">
-                        <input class="parameter__input" type="checkbox" name="programm">
-                        <span class="parameter__element"></span>
-                        <span class="parameter__label">витамины</span>
-                      </label>
-                    </div>
-                    <div class="send">
-                        <button type="submit" class="send__button">Отправить заявку</button>
-                        <span class="send__attantion">* — Обязательные поля</span>
-                    </div>
-                </div>
-            </div>
+        <form class="selection__form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__header">
+            <ul class="form__params params-list">
+              <li class="params-list__item">
+                <label class="cat-info">
+                  <span class="cat-info__label">Имя:*</span>
+                  <input class="cat-info__input" type="text" placeholder="БАРСИК">
+                </label>
+              </li>
+              <li class="params-list__item">
+                <label class="cat-info">
+                  <span class="cat-info__label">Вес (кг):*</span>
+                  <input class="cat-info__input" type="number" placeholder="7">
+                </label>
+              </li>
+              <li class="params-list__item">
+                <label class="cat-info">
+                  <span class="cat-info__label">Возраст (лет):</span>
+                  <input class="cat-info__input" type="number" placeholder="7">
+                </label>
+              </li>
+            </ul>
+            <ul class="form__radio-list">
+              <li class="form__option-item">
+                <label class="option">
+                  <input class="option__input" type="radio" name="programm" value="slim" checked>
+                  <span class="option__element"></span>
+                  <span class="option__label">Похудение</span>
+                </label>
+              </li>
+              <li class="form__option-item">
+                <label class="option">
+                  <input class="option__input" type="radio" name="programm" value="mass">
+                  <span class="option__element"></span>
+                  <span class="option__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="form__option-item">
+                <label class="option">
+                  <input class="option__input" type="radio" name="programm" value="unknown">
+                  <span class="option__element"></span>
+                  <span class="option__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>          
+          <div class="form__block">
+            <p class="form__title">Контактные данные(владельца кота)</p>
+            <ul class="form__contacts">
+              <li class="form__contacts-item">
+                <label class="form-area">
+                  <span>E-mail:*</span>
+                  <input type="text" placeholder="kuklachev@gmail.com">
+                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="1.65" y1="5.84766" x2="1.65" y2="13.8477" stroke="#222222" stroke-width="1.3"/>
+                      <line x1="18.65" y1="5.84766" x2="18.65" y2="13.8477" stroke="#222222" stroke-width="1.3"/>
+                      <line x1="1" y1="13.1977" x2="19" y2="13.1977" stroke="#222222" stroke-width="1.3"/>
+                      <line x1="1" y1="1.19766" x2="19" y2="1.19766" stroke="#222222" stroke-width="1.3"/>
+                      <path d="M18.35 3.02975L10 9.5242L1.65 3.02975V1.49766H4.5L10 1.49766H15H18.35V3.02975Z" stroke="#222222" stroke-width="1.3"/>
+                    </svg>
+                </label>
+              </li>
+              <li class="form__contacts-item">
+                <label class="form-area">
+                  <span>Телефон:*</span>
+                  <input type="tel" placeholder="8 (960) 900-60-90">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                      <path d="M17.9 9.75275H9.39999V10.9569H17.9L15.8 13.0641L16.7 13.9672L19.8 10.8565C19.8974 10.7263 19.95 10.5678 19.95 10.405C19.95 10.2421 19.8974 10.0837 19.8 9.95344L16.7 6.84277L15.8 7.74587L17.9 9.75275Z" fill="black"/>
+                      <path d="M8.10001 19.7872V13.5659C8.08846 13.41 8.02154 13.2635 7.91142 13.153C7.80131 13.0425 7.65531 12.9754 7.50001 12.9638H3.10001C3.10516 13.2815 3.23325 13.5848 3.45718 13.8095C3.68112 14.0342 3.98336 14.1627 4.30001 14.1679H6.80001V19.1851H3.10001C2.86326 19.2 2.62591 19.1676 2.40176 19.0896C2.17762 19.0117 1.97115 18.8898 1.79436 18.7311C1.61757 18.5723 1.47399 18.3799 1.37196 18.165C1.26992 17.9501 1.21148 17.717 1.20001 17.4793V3.43111C1.19181 2.96681 1.36516 2.51774 1.68292 2.18013C2.00069 1.84252 2.43758 1.64322 2.90001 1.62492H6.80001V6.64212H4.40001C4.08336 6.64729 3.78112 6.77581 3.55718 7.00052C3.33325 7.22523 3.20516 7.52851 3.20001 7.84625H7.60001C7.75531 7.83466 7.90131 7.76751 8.01142 7.65701C8.12154 7.54651 8.18846 7.40002 8.20001 7.24418V0.922517C8.15232 0.76584 8.06117 0.626022 7.93721 0.519407C7.81325 0.412792 7.66161 0.343785 7.50001 0.320453H3.10001C2.70599 0.307054 2.31321 0.371716 1.94411 0.510744C1.57501 0.649771 1.23684 0.860436 0.948933 1.13069C0.661026 1.40095 0.42903 1.7255 0.266207 2.08579C0.103385 2.44608 0.01293 2.83504 1.46306e-05 3.23043V17.1782C-0.0289644 17.5773 0.0246504 17.978 0.157487 18.3552C0.290324 18.7324 0.499509 19.078 0.771886 19.3701C1.04426 19.6623 1.37394 19.8947 1.74019 20.0529C2.10643 20.211 2.50132 20.2913 2.90001 20.2889H7.50001C7.5735 20.304 7.64943 20.3022 7.72216 20.2839C7.7949 20.2655 7.86259 20.2309 7.92021 20.1828C7.97783 20.1346 8.02391 20.074 8.05504 20.0055C8.08616 19.9371 8.10153 19.8624 8.10001 19.7872Z" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0">
+                      <rect width="20" height="20.0688" fill="white" transform="translate(0 0.320435)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form__block">
+            <p class="form__title">Комментарий</p>
+            <textarea name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <div class="form__block">
+            <p class="form__title">Дополнительно</p>
+            <ul class="form__checkbox-list">
+              <li class="form__option-item">
+                <label class="option">
+                  <input class="option__input" type="checkbox" name="programm">
+                  <span class="option__element"></span>
+                  <span class="option__label">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="form__option-item">
+                <label class="option">
+                  <input class="option__input" type="checkbox" name="programm">
+                  <span class="option__element"></span>
+                  <span class="option__label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="form__option-item">
+                <label class="option">
+                  <input class="option__input" type="checkbox" name="programm">
+                  <span class="option__element"></span>
+                  <span class="option__label">молоко</span>
+                </label>
+              </li>
+              <li class="form__option-item">
+                <label class="option">
+                  <input class="option__input" type="checkbox" name="programm">
+                  <span class="option__element"></span>
+                  <span class="option__label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="send">
+              <button type="submit" class="send__button">Отправить заявку</button>
+              <span class="send__attantion">* — Обязательные поля</span>
+          </div>
         </form>
-        <section class="collaboration">
-            <div class="collaboration__wrapper collaboration__wrapper--species">
-              <h2 class="collaboration__invite">приглашаем к сотрудничеству дилеров!</h2>
-              <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            </div>
-            <div class="collaboration__location">
-              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5f09e6168529be0d4d90e80559478d0b873b18f95c8683c7b2c03989b0a447c&amp;source=constructor" width="320" height="362"></iframe>
-            </div>
-          </section>
     </main>
 
     <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <p class="page-footer__logo">
+      <section class="page-footer__contacts contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__soaring">
+            <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5f09e6168529be0d4d90e80559478d0b873b18f95c8683c7b2c03989b0a447c&amp;source=constructor" width="320" height="362"></iframe>
+        </div>
+      </section>
+        <div class="page__wrapper page-footer__wrapper">
+          <a class="page-footer__logo" href="index.html">
             <img src="img/footer-logo.svg" width="128" height="24" alt="«Кэт энерджи»">
-          </p>
-          <div class="page-footer__social social">
-            <ul class="social__list">
+          </a>
+            <ul class="page-footer__social social">
               <li class="social__item">
                 <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы вконтакте">
                   <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,11 +193,14 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <a class="copyright__link--name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
-          </a>
+            <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__text">HTML Academy</span>
+              <span class="copyright__logo">
+                <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                  <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+                </svg>
+              </span>
+            </a>
         </div>
       </footer>
     </body>
