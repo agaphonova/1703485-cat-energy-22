@@ -1,0 +1,28 @@
+.program {
+  @include font;
+
+  .program__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.programm {
+  background: $basic_grey;
+
+  .programm__name {
+    text-transform: uppercase;
+  }
+
+  .programm__description {
+    @include normal-text;
+  }
+
+  .programm__catalog {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $nav-color;
+    text-decoration: none;
+  }
+}

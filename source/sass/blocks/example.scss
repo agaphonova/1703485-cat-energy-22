@@ -1,0 +1,34 @@
+.example {
+  background: $basic_grey;
+
+  .example__title {
+    @include font;
+  }
+
+  .example__intro {
+    @include normal-text;
+  }
+}
+
+.example__item {
+  .example__number {
+    @include font;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .example__description {
+    @include normal-text;
+    font-size: 12px;
+  }
+}
+
+.example__cost {
+  .example__cost-title {
+    @include font;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}

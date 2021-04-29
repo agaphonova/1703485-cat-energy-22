@@ -1,0 +1,17 @@
+.description {
+  .description__title {
+    @include font;
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.description__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .description__item {
+    @include normal-text;
+  }
+}

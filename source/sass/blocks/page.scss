@@ -1,19 +1,11 @@
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-  url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-// root
-$black: #000000;
-$white: #FFFFFF;
-$main-green: #68B738;
-
-// это свойство уберем после подключения нормалайз
-body {
-  margin: 0;
-  padding: 0;
+.page__body {
+  width: 320px;
 }

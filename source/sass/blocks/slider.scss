@@ -1,0 +1,10 @@
+.slider {
+  .slider__btn {
+    @include font;
+    font-size: 16px;
+    line-height: 20px;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+  }
+}

@@ -1,5 +1,7 @@
 // Начните писать стили здесь
-// @import "normalize.scss";
+@import "../../node_modules/normalize-scss/sass/normalize";
+@import "./variables.scss";
+@import "./mixins.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/main-nav.scss";
@@ -7,13 +9,12 @@
 @import "./blocks/page-main.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/btn.scss";
-@import "./blocks/programm.scss";
+@import "./blocks/program.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/description.scss";
 @import "./blocks/example.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/page-footer.scss";
-@import "./blocks/description.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
