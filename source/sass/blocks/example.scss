@@ -1,13 +1,17 @@
 .example {
   background: $basic_grey;
+}
 
-  .example__title {
-    @include font;
-  }
+.example__wrapper {
+  padding: 27px 21px 25px 20px;
+}
 
-  .example__intro {
-    @include normal-text;
-  }
+.example__title {
+  @include font;
+}
+
+.example__intro {
+  @include normal-text;
 }
 
 .example__item {
@@ -25,7 +29,7 @@
 }
 
 .example__cost {
-  .example__cost-title {
+  .example__cost-title, .example__cost-price {
     @include font;
     font-size: 14px;
     line-height: 20px;

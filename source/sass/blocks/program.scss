@@ -1,28 +1,35 @@
 .program {
   @include font;
-
-  .program__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
 }
 
-.programm {
+.program__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.program__item {
   background: $basic_grey;
+  padding: 21px 33px 18px 20px;
+  margin: 20px 0;
+}
 
-  .programm__name {
-    text-transform: uppercase;
-  }
+// .programm {
 
-  .programm__description {
-    @include normal-text;
-  }
+// }
 
-  .programm__catalog {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: $nav-color;
-    text-decoration: none;
-  }
+.programm__name {
+  text-transform: uppercase;
+}
+
+.programm__description {
+  @include normal-text;
+}
+
+.programm__catalog {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $nav-color;
+  text-decoration: none;
+  margin-bottom: 18px;
 }
