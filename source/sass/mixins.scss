@@ -1,11 +1,13 @@
-@mixin font {
-  font-weight: 400;
+@mixin font-oswald {
   font-family: "Oswald", sans-serif;
 }
 
 @mixin normal-text {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   color: $special_dark-grey;
   line-height: 18px;
+}
+
+@mixin visually-hidden {
+
 }
