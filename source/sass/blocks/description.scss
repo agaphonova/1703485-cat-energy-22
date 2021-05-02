@@ -1,8 +1,8 @@
 .description {
   .description__title {
-    @include font;
     font-size: 36px;
     line-height: 40px;
+    color: $basic-black;
   }
 }
 
@@ -12,7 +12,7 @@
   margin: 0;
 
   .description__item {
-    @include normal-text;
     margin-bottom: 20px;
+    font-family: "Arial", sans-serif;
   }
 }

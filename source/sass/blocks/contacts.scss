@@ -4,14 +4,13 @@
 
 .contacts__soaring {
   .contacts__invite {
-    @include font;
     font-size: 16px;
-    line-height: 18px;
     text-transform: uppercase;
+    color: $basic-black;
   }
 
   .contacts__address {
-    @include normal-text;
     line-height: 20px;
+    font-family: "Arial", sans-serif;
   }
 }

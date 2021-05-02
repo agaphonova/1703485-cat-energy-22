@@ -1,13 +1,4 @@
-@mixin font-oswald {
-  font-family: "Oswald", sans-serif;
-}
-
-@mixin normal-text {
-  font-size: 14px;
-  color: $special_dark-grey;
-  line-height: 18px;
-}
-
 @mixin visually-hidden {
-
+  visibility: hidden;
+  font-size: 0;
 }

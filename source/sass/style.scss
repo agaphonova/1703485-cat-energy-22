@@ -1,6 +1,7 @@
 @import "../../node_modules/normalize.css/normalize";
 @import "./variables.scss";
 @import "./mixins.scss";
+@import "./fonts.scss";
 @import "./global.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
@@ -10,7 +11,6 @@
 @import "./blocks/promo.scss";
 @import "./blocks/btn.scss";
 @import "./blocks/program.scss";
-@import "./blocks/visually-hidden.scss";
 @import "./blocks/description.scss";
 @import "./blocks/example.scss";
 @import "./blocks/slider.scss";
