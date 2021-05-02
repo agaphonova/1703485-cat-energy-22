@@ -32,7 +32,6 @@ const server = (done) => {
     },
     cors: true,
     notify: false,
-    port: 8080,
     ui: false,
   });
   done();
