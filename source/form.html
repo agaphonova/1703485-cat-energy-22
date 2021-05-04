@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -56,21 +57,21 @@
               <label class="option">
                 <input class="option__input" type="radio" name="diet" value="slim" checked>
                 <span class="option__element"></span>
-                <span class="option__label">Похудение</span>
+                <span class="option__label option__label--diet">Похудение</span>
               </label>
             </li>
             <li class="form__option-item">
               <label class="option">
                 <input class="option__input" type="radio" name="diet" value="mass">
                 <span class="option__element"></span>
-                <span class="option__label">Набор массы</span>
+                <span class="option__label option__label--diet">Набор массы</span>
               </label>
             </li>
             <li class="form__option-item">
               <label class="option">
                 <input class="option__input" type="radio" name="diet" value="unknown" disabled>
                 <span class="option__element"></span>
-                <span class="option__label">Не знаю (Нужен ваш совет)</span>
+                <span class="option__label option__label--diet">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -125,28 +126,28 @@
               <label class="option">
                 <input class="option__input" type="checkbox" name="diet" checked>
                 <span class="option__element"></span>
-                <span class="option__label">сахарозаменитель</span>
+                <span class="option__label option__label--extra">сахарозаменитель</span>
               </label>
             </li>
             <li class="form__option-item">
               <label class="option">
                 <input class="option__input" type="checkbox" name="diet">
                 <span class="option__element"></span>
-                <span class="option__label">питьевая вода</span>
+                <span class="option__label option__label--extra">питьевая вода</span>
               </label>
             </li>
             <li class="form__option-item">
               <label class="option">
                 <input class="option__input" type="checkbox" name="diet">
                 <span class="option__element"></span>
-                <span class="option__label">молоко</span>
+                <span class="option__label option__label--extra">молоко</span>
               </label>
             </li>
             <li class="form__option-item">
               <label class="option">
                 <input class="option__input" type="checkbox" name="diet">
                 <span class="option__element"></span>
-                <span class="option__label">витамины</span>
+                <span class="option__label option__label--extra">витамины</span>
               </label>
             </li>
           </ul>
@@ -161,7 +162,7 @@
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--grey">
           <div class="contacts__soaring">
             <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
