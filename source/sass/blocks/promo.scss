@@ -1,0 +1,27 @@
+.promo {
+
+  color: $basic-white;
+  background: url("/img/promo-cat.jpg");
+  background-color: rgba(104, 183, 56, 0.85);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+.promo__subtitle {
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  text-transform: uppercase;
+  text-decoration: none;
+}

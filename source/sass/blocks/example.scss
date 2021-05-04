@@ -1,0 +1,36 @@
+.example {
+  background: $basic_grey;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+}
+
+.example__wrapper {
+  padding: 27px 21px 25px 20px;
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.example__description {
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+}
+
+.example__cost-title,
+.example__cost-price {
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.example__intro {
+  font-family: "Arial", "Verdana", sans-serif;
+}
