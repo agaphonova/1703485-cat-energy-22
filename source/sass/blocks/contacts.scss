@@ -1,5 +1,9 @@
 .contacts__wrapper {
   padding: 27px 20px;
+
+  &--grey {
+    background-color: $basic_grey;
+  }
 }
 
 .contacts__invite {
