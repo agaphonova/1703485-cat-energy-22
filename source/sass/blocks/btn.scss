@@ -7,4 +7,9 @@
   color: $basic-white;
   border: none;
   text-transform: uppercase;
+
+  &--grey {
+    background-color: $basic_grey;
+    color: $special_dark-grey;
+  }
 }
