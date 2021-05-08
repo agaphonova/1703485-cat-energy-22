@@ -3,13 +3,31 @@
   line-height: 20px;
   width: 280px;
   height: 40px;
-  background-color: $main-green;
+  background-color: $basic-green;
   color: $basic-white;
   border: none;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3%);
+    background-color: $basic-green-2;
+  }
+
   &--grey {
     background-color: $basic_grey;
     color: $special_dark-grey;
+
+    &:hover {
+      background-color: $basic_grey-2;
+    }
+
+    &:active {
+      background-color: $basic_grey-2;
+      color: rgba(#444444, 0.3%);
+    }
   }
 }
