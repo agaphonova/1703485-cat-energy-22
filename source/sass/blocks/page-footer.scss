@@ -4,4 +4,12 @@
 
 .page-footer__logo {
   margin: 0;
+
+  &:hover svg path {
+    fill: scale-color(#000000, $lightness: 20%);
+  }
+
+  &:active svg path {
+    fill: scale-color(#000000, $lightness: 40%);
+  }
 }

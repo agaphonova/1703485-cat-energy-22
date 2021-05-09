@@ -1,0 +1,7 @@
+.social__link svg path:hover {
+  stroke: $basic-green;
+}
+
+.social__link svg path:active {
+  stroke: $green-social-active;
+}
