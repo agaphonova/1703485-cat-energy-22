@@ -7,10 +7,10 @@
   text-decoration: none;
 
   &:hover {
-    color: scale-color(#000000, $lightness: 40%);
+    color: scale-color($basic-black, $lightness: 40%);
   }
 
   &:active {
-    color: scale-color(#000000, $lightness: 60%);
+    color: scale-color($basic-black, $lightness: 60%);
   }
 }

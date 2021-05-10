@@ -13,21 +13,21 @@
   }
 
   &:active {
-    color: rgba(#ffffff, 0.3%);
+    color: rgba($basic-white, 0.3%);
     background-color: $basic-green-2;
   }
 
-  &--grey {
-    background-color: $basic_grey;
-    color: $special_dark-grey;
+  &--gray {
+    background-color: $basic-grey;
+    color: $special-dark-grey;
 
     &:hover {
-      background-color: $basic_grey-2;
+      background-color: $basic-grey-2;
     }
 
     &:active {
-      background-color: $basic_grey-2;
-      color: rgba(#444444, 0.3%);
+      background-color: $basic-grey-2;
+      color: rgba($special-dark-grey, 0.3%);
     }
   }
 }
