@@ -5,4 +5,12 @@
 .site-list__link {
   color: $basic-black;
   text-decoration: none;
+
+  &:hover {
+    color: scale-color($basic-black, $lightness: 40%);
+  }
+
+  &:active {
+    color: scale-color($basic-black, $lightness: 60%);
+  }
 }

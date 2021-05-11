@@ -1,7 +1,15 @@
 .page-footer__wrapper {
-  background-color: $basic_grey;
+  background-color: $basic-grey;
 }
 
 .page-footer__logo {
   margin: 0;
+
+  &:hover svg path {
+    fill: scale-color($basic-black, $lightness: 20%);
+  }
+
+  &:active svg path {
+    fill: scale-color($basic-black, $lightness: 40%);
+  }
 }

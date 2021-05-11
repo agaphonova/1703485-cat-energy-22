@@ -3,8 +3,31 @@
   line-height: 20px;
   width: 280px;
   height: 40px;
-  background-color: $main-green;
+  background-color: $basic-green;
   color: $basic-white;
   border: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3%);
+    background-color: $basic-green-2;
+  }
+
+  &--gray {
+    background-color: $basic-grey;
+    color: $special-dark-grey;
+
+    &:hover {
+      background-color: $basic-grey-2;
+    }
+
+    &:active {
+      background-color: $basic-grey-2;
+      color: rgba($special-dark-grey, 0.3%);
+    }
+  }
 }

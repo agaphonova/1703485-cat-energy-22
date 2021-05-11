@@ -1,7 +1,21 @@
 .copyright {
   text-decoration: none;
+
+  &:hover path {
+    fill: $basic-green;
+  }
+
+  &:active .copyright__text {
+    color: scale-color($special-dark-grey, $lightness: 70%);
+  }
+
+  &:active path {
+    fill: scale-color($basic-green-2, $lightness: 70%);
+  }
 }
 
 .copyright__text {
+  font-family: "Arial", "Verdana", sans-serif;
   font-size: 16px;
+  color: $special-dark-grey;
 }
