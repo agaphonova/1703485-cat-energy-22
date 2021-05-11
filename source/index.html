@@ -8,10 +8,12 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo.svg" width="191" height="38" alt="«Кэт энерджи»">
-      </a>
-      <button class="page-header__toggle" aria-label="открыть/закрыть меню" type="button"></button>
+      <div class="page-header-row">
+        <a class="page-header-row__logo" href="index.html">
+          <img src="img/logo.svg" width="191" height="38" alt="«Кэт энерджи»">
+        </a>
+        <button class="page-header-row__toggle" aria-label="открыть/закрыть меню" type="button"></button>
+      </div>
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -30,12 +32,14 @@
     <main class="page-main">
       <section class="promo">
         <div class="page__wrapper promo__wrapper">
-          <h1 class="promo__title">Функциональное питание для котов</h1>
-          <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+          <div class="promo__column">
+            <h1 class="promo__title">Функциональное питание для котов</h1>
+            <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+            <a class="promo__button btn" href="form.html">Подобрать программу</a>
+          </div>
           <div class="promo__img">
             <img src="img/cat-food.png" width="280" height="270" alt="Образец продукта">
           </div>
-          <a class="promo__button btn" href="form.html">Подобрать программу</a>
         </div>
       </section>
 

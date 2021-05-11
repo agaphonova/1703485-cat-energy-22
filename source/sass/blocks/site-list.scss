@@ -1,5 +1,20 @@
 .site-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    width: 493px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+    justify-content: space-between;
+  }
 }
 
 .site-list__link {
@@ -12,5 +27,9 @@
 
   &:active {
     color: scale-color($basic-black, $lightness: 60%);
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
   }
 }

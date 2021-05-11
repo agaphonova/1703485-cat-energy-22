@@ -1,5 +1,4 @@
 .promo {
-
   color: $basic-white;
   background: url("/img/promo-cat.jpg");
   background-color: rgba(104, 183, 56, 0.85);
@@ -7,6 +6,25 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 0 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -136px;
+      right: 0;
+      width: 720px;
+      height: 694px;
+      background: url("/img/cat-background-big.jpg") no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
 }
 
 .promo__title {
@@ -14,14 +32,36 @@
   line-height: 36px;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
 }
 
 .promo__subtitle {
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
+}
+
+.promo__img {
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
 
 .promo__button {
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  order: 4;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
