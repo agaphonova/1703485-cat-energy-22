@@ -1,3 +1,10 @@
+.description__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
 .description__title {
   font-size: 36px;
   line-height: 40px;
@@ -8,9 +15,21 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .description__item {
+  display: block;
   margin-bottom: 20px;
   font-family: "Arial", "Verdana", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin-right: 74px;
+  }
 }

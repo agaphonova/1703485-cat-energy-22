@@ -1,3 +1,10 @@
+.program {
+  @media (min-width: $tablet-width) {
+    width: 377px;
+    padding-left: 52px;
+  }
+}
+
 .program__name {
   text-transform: uppercase;
   color: $basic-black;

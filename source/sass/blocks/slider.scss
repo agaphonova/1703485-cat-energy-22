@@ -1,3 +1,9 @@
+.slider__controls {
+  @media (min-width: $tablet-width) {
+    background: $basic-grey;
+  }
+}
+
 .slider__btn {
   font-size: 16px;
   line-height: 20px;

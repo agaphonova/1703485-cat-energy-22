@@ -3,7 +3,6 @@
   font-size: 16px;
   line-height: 20px;
   width: 280px;
-  height: 40px;
   background-color: $basic-green;
   color: $basic-white;
   border: none;
@@ -36,5 +35,7 @@
 
   @media (min-width: $tablet-width) {
     width: 244px;
+    padding: 14px 0;
+    font-size: 20px;
   }
 }
