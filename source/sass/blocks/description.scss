@@ -3,6 +3,11 @@
     width: 708px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-bottom: 69px;
+  }
 }
 
 .description__title {
@@ -21,6 +26,11 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .description__item {
@@ -31,5 +41,10 @@
   @media (min-width: $tablet-width) {
     width: 248px;
     margin-right: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    margin: 0;
   }
 }
