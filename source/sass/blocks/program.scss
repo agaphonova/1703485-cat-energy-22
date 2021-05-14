@@ -1,3 +1,15 @@
+.program {
+  @media (min-width: $tablet-width) {
+    width: 377px;
+    padding-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 374px;
+  }
+}
+
 .program__name {
   text-transform: uppercase;
   color: $basic-black;

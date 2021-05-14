@@ -2,6 +2,15 @@
   min-width: 320px;
 }
 
+.page-footer {
+  background: $basic-grey;
+}
+
 .page__wrapper {
-  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }

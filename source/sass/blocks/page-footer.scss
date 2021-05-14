@@ -1,5 +1,25 @@
+.page-footer__contacts {
+  background: $basic-white;
+}
+
 .page-footer__wrapper {
-  background-color: $basic-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .page-footer__logo {
@@ -11,5 +31,17 @@
 
   &:active svg path {
     fill: scale-color($basic-black, $lightness: 40%);
+  }
+}
+
+.page-footer__social {
+  display: block;
+  width: 280px;
+  border-top: 1px solid $grey-border;
+  border-bottom: 1px solid $grey-border;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }

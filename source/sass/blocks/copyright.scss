@@ -1,5 +1,9 @@
 .copyright {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  align-items: center;
 
   &:hover path {
     fill: $basic-green;
@@ -11,6 +15,12 @@
 
   &:active path {
     fill: scale-color($basic-green-2, $lightness: 70%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    flex-direction: row;
+    align-items: center;
   }
 }
 

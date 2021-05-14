@@ -1,12 +1,14 @@
 .btn {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   width: 280px;
-  height: 40px;
   background-color: $basic-green;
   color: $basic-white;
   border: none;
   text-transform: uppercase;
+  padding: 7px 0;
+  text-align: center;
 
   &:hover {
     background-color: $basic-green-2;
@@ -29,5 +31,11 @@
       background-color: $basic-grey-2;
       color: rgba($special-dark-grey, 0.3%);
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 14px 0;
+    font-size: 20px;
   }
 }
